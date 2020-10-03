@@ -30,7 +30,7 @@ def preprocess(s, lowercase=False):
     tokens = tokenize(s)
     if lowercase:
         # Convert all tokens (with alphabet characters) to lowercase
-        tokens = [token if emoticon_re.search(token) else token.lower() for token in tokens if re.search('[a-zA-Z]', token)]
+        tokens = [token if emoticon_re.search(token) else token.lower() for token in tokens ]
     return tokens
 
 # if __name__ == '__main__':
