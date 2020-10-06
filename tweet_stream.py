@@ -28,7 +28,7 @@ if __name__ == '__main__':
     api = tweepy.API(auth)
 
     twitter_stream = Stream(auth, TweetListener())
-    twitter_stream.filter(languages=["en"], track=["tottenham", "spurs"])
+    twitter_stream.filter(languages=["en"], track=["tottenham hotspur", "thfc", "tottenham"])
 
 # # See timeline tweets
 # for status in tweepy.Cursor(api.home_timeline).items(10):

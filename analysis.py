@@ -22,4 +22,5 @@ with open('tweets.json', 'r') as f:
       else:
         neg_count += 1
 
-print("Negative:", neg_count, "\nPositive:", pos_count)
+total = neg_count + pos_count
+print("Negative:", format((neg_count / total) * 100, '.2f') + "%", "\nPositive:", format((pos_count / total) * 100, '.2f') + "%")
